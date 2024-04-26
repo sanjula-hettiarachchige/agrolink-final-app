@@ -1,0 +1,17 @@
+node_modules/
+.expo/
+.git-old
+.git-ignore/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.git-old
+web-build/
+
+# macOS
+.DS_Store

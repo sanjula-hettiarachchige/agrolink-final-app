@@ -1,0 +1,76 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --transformIgnorePatterns 'node_modules/(?!my-library-dir)/"
+  }, 
+  "jest": {
+    "preset": "jest-expo",
+    "jest": {
+      "preset": "ts-jest",
+      "transformIgnorePatterns": [
+        "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)",
+        "node_modules/(?!variables/.*)"
+      ],
+      "transform": {
+        "^.+\\.(ts|tsx)?$": "ts-jest",
+        "^.+\\.(js|jsx)$": "babel-jest"
+      }
+    }
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "@react-native-community/picker": "^1.8.1",
+    "@react-native-picker/picker": "^2.6.1",
+    "@react-navigation/stack": "^6.3.20",
+    "amazon-cognito-identity-js": "^6.3.7",
+    "axios": "^1.6.2",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.3.1",
+    "entypo": "^2.2.1",
+    "expo": "~49.0.15",
+    "expo-camera": "~13.4.4",
+    "expo-checkbox": "~2.4.0",
+    "expo-constants": "~14.4.2",
+    "expo-file-system": "~15.4.5",
+    "expo-font": "~11.4.0",
+    "expo-image-picker": "^14.7.1",
+    "expo-linking": "~5.0.2",
+    "expo-location": "^16.5.2",
+    "expo-media-library": "~15.4.1",
+    "expo-router": "^2.0.0",
+    "expo-splash-screen": "~0.20.4",
+    "expo-status-bar": "~1.6.0",
+    "jest": "^29.7.0",
+    "jest-expo": "~49.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.72.3",
+    "react-native-aws3": "^0.0.9",
+    "react-native-config": "^1.5.1",
+    "react-native-dotenv": "^3.4.9",
+    "react-native-dropdown-select-list": "^2.0.5",
+    "react-native-fs": "^2.20.0",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-maps": "1.7.1",
+    "react-native-pagination": "^1.5.5",
+    "react-native-picker-select": "^9.0.1",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-snap-carousel": "^3.9.1",
+    "react-native-web": "~0.19.6",
+    "rn-nodeify": "^10.3.0",
+    "ts-jest": "^29.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "babel-jest": "^29.7.0"
+  },
+  "private": true
+}
